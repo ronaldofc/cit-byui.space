@@ -17,5 +17,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-  
+- task: IISWebAppDeploymentOnMachineGroup@0
+  inputs:
+    WebSiteName: 'cit-byui.space'
+    Package: '$(System.DefaultWorkingDirectory)\**\*.zip'
   - task: PublishBuildArtifacts@1
