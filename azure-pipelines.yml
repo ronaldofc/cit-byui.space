@@ -21,3 +21,5 @@ steps:
   inputs:
     WebSiteName: 'cit-byui.space'
     Package: '$(System.DefaultWorkingDirectory)\**\*.zip'
+
+- task: PublishBuildArtifacts@1
